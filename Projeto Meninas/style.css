@@ -1,0 +1,167 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* HEADER */
+.main-header {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/* BOTÃO NEON */
+.btn-neon {
+    padding: 14px 32px;
+    border-radius: 12px;
+    background: #00f2ff;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 12px #00f2ff, 0 0 30px #00f2ff;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-neon:hover {
+    box-shadow: 0 0 20px #00f2ff, 0 0 45px #00f2ff;
+    transform: scale(1.08);
+}
+
+/* BUSCA */
+.search-box {
+    margin-top: 25px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 280px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BOTÕES DE FILTRO */
+.filter-buttons {
+    margin-top: 25px;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+.filter-btn.active {
+    background: #00f2ff;
+    color: black;
+}
+
+/* GRID */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.product-card {
+    padding: 15px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* ANIMAÇÃO SCROLL */
+.scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+    background: #111;
+}
